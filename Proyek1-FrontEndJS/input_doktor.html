@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Dokter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center mt-5">
+        <h1>Form Input</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="nid">ID Dokter</label>
+                  <input
+                    id="nid"
+                    type="number"
+                    name="nid"
+                    class="form-control"
+                    placeholder="Masukkan ID Dokter"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama">Nama Lengkap</label>
+                  <input
+                    id="nama"
+                    type="text"
+                    name="nama"
+                    class="form-control"
+                    placeholder="Masukkan Nama Lengkap"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="keahlian">Keahlian</label>
+                  <input
+                    id="keahlian"
+                    type="text"
+                    name="keahlian"
+                    class="form-control"
+                    placeholder="Masukkan Keahlian"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="no_hp">No HP</label>
+                  <input
+                    id="no_hp"
+                    type="number"
+                    name="no_hp"
+                    class="form-control"
+                    placeholder="Masukkan No HP"
+                    required
+                  />
+                </div>
+                <button type="button" class="btn btn-success">
+                  Input Data
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
+      integrity="sha512-g12Znz8W27X2AF0fDz0Hg7yB8pLx0xaxO5p5q3dxV+5WtX5itVHQKUNRQqdGOc4OUw4UTL7b/OMR+zPZoYr8WQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/input_doktor.js"></script>
+  </body>
+</html>

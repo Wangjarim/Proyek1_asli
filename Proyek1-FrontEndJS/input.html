@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Pasien</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center mt-5">
+        <h1>Form Reservasi</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+              <form id="contact-form">
+                <input type="hidden" id="id_jadwal" name="id_jadwal">
+                <div class="form-group">
+                  <label for="nama_lengkap">Nama Lengkap</label>
+                  <input
+                    id="nama_lengkap"
+                    type="text"
+                    name="nama_lengkap"
+                    class="form-control"
+                    placeholder="Masukkan Nama Lengkap"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nik">NIK</label>
+                  <input
+                    id="nik"
+                    type="number"
+                    name="nik"
+                    class="form-control"
+                    placeholder="Masukkan NIK"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="jenis_kelamin">Jenis Kelamin</label>
+                  <input
+                    id="jenis_kelamin"
+                    type="text"
+                    name="jenis_kelamin"
+                    class="form-control"
+                    placeholder="Masukkan Jenis Kelamin"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tempat_lahir">Tempat Lahir</label>
+                  <input
+                    id="tempat_lahir"
+                    type="text"
+                    name="tempat_lahir"
+                    class="form-control"
+                    placeholder="Masukkan Tempat Lahir"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tanggal_lahir">Tanggal Lahir</label>
+                  <input
+                    id="tanggal_lahir"
+                    type="date"
+                    name="tanggal_lahir"
+                    class="form-control"
+                    placeholder="Masukkan Tanggal Lahir"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="alamat">Alamat</label>
+                  <input
+                    id="alamat"
+                    type="text"
+                    name="alamat"
+                    class="form-control"
+                    placeholder="Masukkan Alamat"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="no_hp">No HP</label>
+                  <input
+                    id="no_hp"
+                    type="number"
+                    name="no_hp"
+                    class="form-control"
+                    placeholder="Masukkan No HP"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_dokter">Nama Dokter</label>
+                  <input
+                    id="nama_dokter"
+                    type="text"
+                    name="nama_dokter"
+                    class="form-control"
+                    placeholder="Masukkan Nama Dokter"
+                    required
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="hari">Hari</label>
+                  <input
+                    id="hari"
+                    type="text"
+                    name="hari"
+                    class="form-control"
+                    placeholder="Masukkan Hari"
+                    required
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="jam">Jam</label>
+                  <input
+                    id="jam"
+                    type="text"
+                    name="jam"
+                    class="form-control"
+                    placeholder="Masukkan Jam"
+                    required
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="ruangan">Ruangan</label>
+                  <input
+                    id="ruangan"
+                    type="text"
+                    name="ruangan"
+                    class="form-control"
+                    placeholder="Masukkan ruangan"
+                    required
+                    disabled
+                  />
+                </div>
+                <!-- <div class="form-group">
+                  <label for="tgl_reservasi">Tanggal Reservasi</label>
+                  <input
+                    id="tgl_reservasi"
+                    type="date"
+                    name="tgl_reservasi"
+                    class="form-control"
+                    placeholder="Masukkan Tanggal Reservasi"
+                    required
+                  />
+                </div> -->
+                <button type="button" class="btn btn-success">
+                  Input Data
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
+      integrity="sha512-g12Znz8W27X2AF0fDz0Hg7yB8pLx0xaxO5p5q3dxV+5WtX5itVHQKUNRQqdGOc4OUw4UTL7b/OMR+zPZoYr8WQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/input.js"></script>
+  </body>
+</html>

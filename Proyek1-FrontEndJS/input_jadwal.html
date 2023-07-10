@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Jadwal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center mt-5">
+        <h1>Form Input Jadwal</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="id_dokter">ID Dokter</label>
+                  <input
+                    id="id_dokter"
+                    type="number"
+                    name="id_dokter"
+                    class="form-control"
+                    placeholder="Masukkan ID Dokter"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="id_hari">Hari</label>
+                  <input
+                    id="id_hari"
+                    type="text"
+                    name="id_hari"
+                    class="form-control"
+                    placeholder="Masukkan hari"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="id_jam">Jam</label>
+                  <input
+                    id="id_jam"
+                    type="text"
+                    name="id_jam"
+                    class="form-control"
+                    placeholder="Masukkan jam"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="id_ruangan">Ruangan</label>
+                  <input
+                    id="id_ruangan"
+                    type="text"
+                    name="id_ruangan"
+                    class="form-control"
+                    placeholder="Masukkan nama ruangan"
+                    required
+                  />
+                </div>
+                <button type="button" class="btn btn-success">
+                  Input Data
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
+      integrity="sha512-g12Znz8W27X2AF0fDz0Hg7yB8pLx0xaxO5p5q3dxV+5WtX5itVHQKUNRQqdGOc4OUw4UTL7b/OMR+zPZoYr8WQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/input_jadwal.js"></script>
+  </body>
+</html>
